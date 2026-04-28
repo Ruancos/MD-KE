@@ -12,7 +12,7 @@ df["game_duration"] = df["game_duration"].astype(int)
 # Seleciona apenas as colunas de interesse
 tabela_fonte = df[
     ["game_mode","champion_name","win","kills","deaths","assists","game_duration","total_damage_dealt"]
-].head(400) #Limitação para 400 linhas
+].head(2000) #Limitação para 400 linhas
 
 tabela_fonte = tabela_fonte.reset_index(drop=True)
 
